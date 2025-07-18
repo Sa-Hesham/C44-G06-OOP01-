@@ -65,10 +65,50 @@ namespace assignment
             //{
             //    Console.WriteLine("June to August");
             //}
-        
+
+
+            #endregion
+
+
+
+            #region Q3
+
+            Permission permissions = Permission.None;
+            bool flag;
+
+           
+          
+                Console.WriteLine("please enter permision   ");
+                flag = Enum.TryParse(Console.ReadLine(), true, out Permission permission);
+
+            if (flag)
+            
+                permissions |= permission;   
+            
+            else
+            
+                Console.WriteLine("Invalid permission!");
+
+            //Console.WriteLine(permissions);
+
+
+            Console.WriteLine("please enter permision   ");
+            flag = Enum.TryParse(Console.ReadLine(), true, out Permission permission2);
+
+
+            if (flag )
+
+                permissions |= permission2;
+
+            else
+
+                Console.WriteLine("Invalid permission!");
+
+            Console.WriteLine(permissions);
+
 
             #endregion
         }
 
-        }
+    }
     }
