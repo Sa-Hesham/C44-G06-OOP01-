@@ -1,10 +1,29 @@
-﻿namespace assignment
+﻿
+
+namespace assignment
 {
+
+
     internal class Program
     {
-        static void Main(string[] args)
+
+         static void Main()
         {
-            Console.WriteLine("Hello, World!");
+
+            #region Q1
+            ////1- Create an enum called "WeekDays" with the days of the week
+            //(Monday to Sunday) as its members.Then, write a C# program that
+            //prints out all the days of the week using this enum.
+
+            foreach (WeekDays day in Enum.GetValues(typeof(WeekDays))) 
+            {
+                Console.WriteLine($"{day} = {(int) day}");
+            }
+
+
+
+            #endregion
+         }
+
         }
     }
-}
