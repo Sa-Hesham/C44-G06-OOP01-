@@ -147,5 +147,42 @@ namespace assignment
             #endregion
         }
 
-    }
-    }
+
+        #region Part1
+
+//Try all what we have learned in the lecture.
+
+/*
+ * i learned  
+ * 1- class library : it is acollection of clasess we can use it  in many projects  has one file (dll file ) and not excutable file 
+ *2- user defined data taypes[struct - enum _ interface _class ]
+ *3- we can write unde namespace scope five user defined datataypes[class -enum - struct _ interface delegate ]
+ *4- Access Modifier Allowed 
+ * inside name space we can used two access modifier  internal and public  with all  user defined data type  
+ * internal we can used the datatype within file only  
+ * public  we can use it in all project
+ * 
+ * 5 access modifire with  class , interface ,struct 
+ * 1-class we can use [private - by-default] [internal]==>inside the cope and project only [public] can access every where in same project
+ * we can write inside the class [attributes - properties - function events ]
+ * 
+ * 2- struct we can use [private - by-default] [internal]==>inside the cope and project only [public] can access every where in same project
+ * we can write inside the class [attributes - properties - function events ]  
+ * 
+ * 3- interFace it acode contract 
+ * we can write insde  signature methods 
+ * and sinature properties  and default implemented method 
+ * access modifires  [public [default] - internal -  private [default for implemented method ] - protected - internal protected - private protected ]
+ * 
+ * 
+ * 
+ * 4 enums  it is aspecial value has  acollectaion of constant values 
+ * can write insde lables 
+ * Enums are strongly typed constants.
+ */
+
+
+#endregion
+
+}
+}
