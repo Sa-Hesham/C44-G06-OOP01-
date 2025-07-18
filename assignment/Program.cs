@@ -1,5 +1,7 @@
 ﻿
 
+using System;
+using System.Drawing;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace assignment
@@ -73,38 +75,73 @@ namespace assignment
 
             #region Q3
 
-            Permission permissions = Permission.None;
-            bool flag;
+            //Permission permissions = Permission.None;
+            //bool flag;
 
-           
-          
-                Console.WriteLine("please enter permision   ");
-                flag = Enum.TryParse(Console.ReadLine(), true, out Permission permission);
 
-            if (flag)
-            
-                permissions |= permission;   
-            
-            else
-            
-                Console.WriteLine("Invalid permission!");
+
+            //    Console.WriteLine("please enter permision   ");
+            //    flag = Enum.TryParse(Console.ReadLine(), true, out Permission permission);
+
+            //if (flag)
+
+            //    permissions |= permission;   
+
+            //else
+
+            //    Console.WriteLine("Invalid permission!");
+
+            ////Console.WriteLine(permissions);
+
+
+            //Console.WriteLine("please enter permision   ");
+            //flag = Enum.TryParse(Console.ReadLine(), true, out Permission permission2);
+
+
+            //if (flag )
+
+            //    permissions |= permission2;
+
+            //else
+
+            //    Console.WriteLine("Invalid permission!");
 
             //Console.WriteLine(permissions);
 
 
-            Console.WriteLine("please enter permision   ");
-            flag = Enum.TryParse(Console.ReadLine(), true, out Permission permission2);
+            #endregion
 
 
-            if (flag )
 
-                permissions |= permission2;
 
+            #region Q4
+
+            //5.Create an enum called "Colors" with the basic colors(Red, Green, Blue)
+            //as its members.Write a C# program that takes a color name as input from
+            //the user and displays a message indicating whether the input color is a
+            //primary color or not.
+
+            Console.WriteLine("Please enter a color (Red, Green, Blue):");
+
+          
+
+            bool isValid = Enum.TryParse(Console.ReadLine(), true, out Colors color);
+
+            if (isValid)
+            {
+                if (color == Colors.Red || color == Colors.Blue || color == Colors.Green)
+                {
+                    Console.WriteLine($"{color} is a primary color.");
+                }
+                else
+                {
+                    Console.WriteLine($"{color} is not a primary color.");
+                }
+            }
             else
-
-                Console.WriteLine("Invalid permission!");
-
-            Console.WriteLine(permissions);
+            {
+                Console.WriteLine("Invalid color entered.");
+            }
 
 
             #endregion
